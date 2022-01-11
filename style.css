@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border: 5px solid #2e2e2e;
+    box-shadow: 5px 5px;
+}
+.nav {
+    padding: 20px;
+}
+.fotter {
+    padding: 20px;
+}
+.sec {
+    padding: 50px;
+}
+.h {
+    position: relative;
+    top: -20px;
+}
+.l {
+    margin: 15px;
+}
