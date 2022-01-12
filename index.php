@@ -9,8 +9,10 @@ foreach (glob("libraries/objects/*.php") as $filename)
 // include customized objects
 include ('objects/main.php');
 
+// start the router 
 $router = new Router();
 
+// routes
 $router->get('/', function() {
     include('pages/index.php');
 });
@@ -18,8 +20,12 @@ $router->get('/about', function() {
     echo "about";
 });
 $router->get('/contact', function() {
-    echo "contact";
+    include('pages/contact.php');
+});
+$router->post('/contact', function() {
+    return print_r($_POST);
 });
 
+// initilize the routeing
 echo $router->resolve($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 ?>
