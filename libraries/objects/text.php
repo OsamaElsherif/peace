@@ -21,5 +21,8 @@ class text {
         echo $this->text;
         echo "</span>";
     }
+    public function label($class='', $id='', $style='') {
+        echo "<label class='$class' id='$id' style='$style'>$this->text</label>";
+    }
 }
 ?>
