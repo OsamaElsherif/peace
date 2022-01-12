@@ -47,5 +47,9 @@ $doc->Create('', function() {
             $license->paragraph('l', 'l', 'text-align: center');
         });
     });
+    $script = new script();
+    $script->Create(function() {
+        echo "console.log('here goes the script that you want to create...');";
+    });
 });
 ?>
