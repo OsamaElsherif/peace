@@ -1,7 +1,7 @@
 <?php
 // include router library
 include('libraries/Routing/router.php');
-// include basic html objects
+// include basic html objects library
 foreach (glob("libraries/objects/*.php") as $filename)
 {
     include $filename;
