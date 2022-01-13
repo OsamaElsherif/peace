@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this is a class for heading from 1:6, and paragaraphs and spands;
-class text {
+class text extends element {
     protected string $text;
 
     public function __construct($text='') {

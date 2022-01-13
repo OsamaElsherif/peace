@@ -1,5 +1,7 @@
 <?php
-class input {
+include_once('types/element.php');
+
+class input extends element {
     public string $id;
     public string $class;
     public string $name;
@@ -10,7 +12,7 @@ class input {
         $this->name = $name;
     } 
 }
-class form {
+class form extends element {
     protected string $class = '';
     protected string $id = '';
     protected string $method = '';
@@ -24,7 +26,7 @@ class form {
     }
 
     public static function input($class, $id, $name, $type, $contains): input {
-        echo "<input type='$type' class='$class' id='$id' vlaue='";
+        echo "<input type='$type' class='$class' id='$id' value='";
         $contains();
         echo "' name='$name'>";
         $input = new input($id, $class, $name);

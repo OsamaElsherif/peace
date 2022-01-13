@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this is a class for creating a <div></div>
-class div {
+class div extends element{
     protected string $class = '';
     protected string $id = '';
 

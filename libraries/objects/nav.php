@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this class is for nav creation
-class nav {
+class nav extends element{
     protected string $class;
     protected string $id;
 

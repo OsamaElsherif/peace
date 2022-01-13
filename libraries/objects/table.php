@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // these classes are for table creations
-class table {
+class table extends element {
     protected string $class;
     protected string $id;
 
@@ -14,7 +16,7 @@ class table {
         echo "</table>";
     }
 }
-class thead {
+class thead  extends element{
     protected string $class;
     protected string $id;
 
@@ -28,7 +30,7 @@ class thead {
         echo "</thead>";
     }
 }
-class tbody {
+class tbody extends element {
     protected string $class;
     protected string $id;
 

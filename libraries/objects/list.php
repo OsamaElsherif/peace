@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this is a class for <ul></ul>
-class ul {
+class ul extends element {
     protected string $class;
     protected string $id;
 
@@ -15,7 +17,7 @@ class ul {
     }
 }
 // this is a class for <li></li>
-class li {
+class li extends element {
     protected string $class;
     protected string $id;
 

@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this class is for fotter creation
-class fotter {
+class fotter extends element {
     protected string $class;
     protected string $id;
 

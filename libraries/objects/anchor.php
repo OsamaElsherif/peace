@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this is a class for anchros <a></a>
-class anchor {
+class anchor extends element {
     protected string $class;
     protected string $id;
 

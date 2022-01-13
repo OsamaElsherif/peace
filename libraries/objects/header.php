@@ -1,6 +1,8 @@
 <?php
+include_once('types/element.php');
+
 // this class is for header creation
-class header {
+class header extends element {
     protected string $class;
     protected string $id;
 
