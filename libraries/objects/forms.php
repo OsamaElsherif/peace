@@ -1,4 +1,15 @@
 <?php
+class input {
+    public string $id;
+    public string $class;
+    public string $name;
+    
+    public function __construct($id, $class, $name) {
+        $this->id = $id;
+        $this->class = $class;
+        $this->name = $name;
+    } 
+}
 class form {
     protected string $class = '';
     protected string $id = '';
@@ -12,16 +23,21 @@ class form {
         $this->action = $action;
     }
 
-    public static function input($class, $id, $name, $type, $contains) {
+    public static function input($class, $id, $name, $type, $contains): input {
         echo "<input type='$type' class='$class' id='$id' vlaue='";
         $contains();
         echo "' name='$name'>";
+        $input = new input($id, $class, $name);
+
+        return $input;
     }
     
     public function Create($contains) {
         echo "<form action='$this->action' method='$this->method' class='$this->class' id='$this->id'>";
         $contains();
         echo "</form>";
+
+        return $this;
     }
 }
 ?>
