@@ -7,13 +7,15 @@ class script {
     }
     
     public function Create($js) {
-        if ($src == '') {
+        if ($this->src == '') {
             echo "<script>";
             $js();
             echo "</script>";
         } else {
             echo "<script src='$this->src'></script>";
         }
+
+        return $this;
     }
 
 }
