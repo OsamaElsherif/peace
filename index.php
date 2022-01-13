@@ -16,8 +16,8 @@ $router = new Router();
 $router->get('/', function() {
     include('pages/index.php');
 });
-$router->get('/about', function() {
-    echo "about";
+$router->get('/todo', function() {
+    include('pages/todo.php');
 });
 $router->get('/contact', function() {
     include('pages/contact.php');
