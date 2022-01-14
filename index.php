@@ -1,6 +1,8 @@
 <?php
 // include router library
 include('libraries/Routing/router.php');
+// include database library
+include('libraries/database/connection.php');
 // include basic html objects library
 foreach (glob("libraries/objects/*.php") as $filename)
 {
@@ -16,6 +18,9 @@ $router = new Router();
 $router->get('/', function() {
     include('pages/index.php');
 });
+$router->get('/info', function() {
+    return phpinfo();
+});
 $router->get('/todo', function() {
     include('pages/todo.php');
 });
@@ -24,6 +29,15 @@ $router->get('/contact', function() {
 });
 $router->post('/contact', function() {
     return print_r($_POST);
+});
+$router->get('/sql', function() {
+    $conn = new connection('ODBC Driver 17 for SQL Server', 'localhost', 'NABTA');
+    $conn->connect('sa', 'Osama_3502');
+    $query = new query("SELECT * FROM [User]");
+    $exec = $conn->exec($query);
+    echo "<pre>";
+    print_r($query::fetchAll($exec));
+    echo "</pre>";
 });
 
 // initilize the routeing
