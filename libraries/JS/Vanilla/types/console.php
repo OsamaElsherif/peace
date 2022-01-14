@@ -10,7 +10,7 @@ class console_log extends console {
 
     public function __construct($msg) {
         $this->msg = $msg;
-        $this->script = "console.log('$this->msg')";
+        $this->script = "console.log($this->msg)";
     }
 }
 ?>

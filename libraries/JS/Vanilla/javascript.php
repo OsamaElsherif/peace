@@ -9,9 +9,14 @@ foreach (glob('libraries/JS/Vanilla/types/*.php') as $filename)
 class javascript extends script {
     protected string $script;
 
+    public function __construct($script='', $src='') {
+        $this->script = $script;
+        $this->src = $src;
+    }
+
     // console log
     public function console_log(string $message): console_log {
-        $this->script = "console.log('$message');";
+        // $this->script = "console.log($message);";
         $cl = new console_log($message);
         return $cl;
     }
@@ -51,10 +56,30 @@ class javascript extends script {
         $domElement = $this->QuerySelector($id);
         $script = "$domElement.style.$property = '$value';";
         $js_statment = new jstatment($script);
-
+        
+        return $js_statment;
+    }
+    
+    public function getValue(object $element): jstatment {
+        $id = $element->id;
+        $domElement = $this->QuerySelector($id);
+        $script = "$domElement.value;";
+        $js_statment = new jstatment($script);
+        
         return $js_statment;
     }
 
+    public function var(string $identifier, jstatment|string $value): jstatment {
+        if(is_object($value)) {
+            $script = "var $identifier = $value->script";
+        } else {
+            $script = "var $identifier = $value;";
+        }
+        $js_statment = new jstatment($script);
+        
+        return $js_statment;
+    }
+    
     // runing the final script
     public function run() {
         parent::Create(function() {
