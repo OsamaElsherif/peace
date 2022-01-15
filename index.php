@@ -35,9 +35,12 @@ $router->get('/sql', function() {
     $conn->connect('sa', 'Osama_3502');
     $query = new query("SELECT * FROM [User]");
     $exec = $conn->exec($query);
-    echo "<pre>";
-    print_r($query::fetchAll($exec));
-    echo "</pre>";
+    // echo "<pre>";
+    $res = query::fetchAll($exec);
+    // print_r(array_keys($res[0]));
+    $table = new table('table_class', 'table_id');
+    $t = $table->autoCreate($res);
+    // echo "</pre>";
 });
 
 // initilize the routeing
