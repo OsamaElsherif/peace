@@ -15,5 +15,9 @@ class section extends element {
         $contains();
         echo "</section>";
     }
+
+    public static function Build($class="", $id="") {
+        return new section($class, $id);
+    }
 }
 ?>

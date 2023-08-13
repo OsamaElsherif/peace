@@ -41,5 +41,9 @@ class form extends element {
 
         return $this;
     }
+
+    public static function Build($class="", $id="", $method="", $action="") {
+        return new form($class, $id, $method, $action);
+    }
 }
 ?>

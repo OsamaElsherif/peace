@@ -19,6 +19,10 @@ $router->get('/', function() {
     include('pages/index.php');
 });
 
+$router->get('/test', function() {
+    include('pages/test.php');
+}); 
+
 // initilize the routeing
 echo $router->resolve($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 ?>

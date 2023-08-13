@@ -18,5 +18,9 @@ class script {
         return $this;
     }
 
+    public static function Build($src="") {
+        return new script($src);
+    }
+
 }
 ?>

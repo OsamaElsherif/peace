@@ -15,5 +15,9 @@ class anchor extends element {
         $contains();
         echo "</a>";
     }
+
+    public static function Build($class="", $id="") {
+        return new anchor($class, $id);
+    }
 }
 ?>

@@ -15,6 +15,10 @@ class ul extends element {
         $contains();
         echo "</ul>";
     }
+
+    public static function Build($class="", $id="") {
+        return new ul($class, $id);
+    }
 }
 // this is a class for <li></li>
 class li extends element {
@@ -29,6 +33,10 @@ class li extends element {
         echo "<li class='$this->class' id='$this->id'>";
         $contains();
         echo "</li>";
+    }
+
+    public static function Build($class="", $id="") {
+        return new li($class, $id);
     }
 }
 ?>

@@ -15,5 +15,9 @@ class header extends element {
         $contains();
         echo "</header>";
     }
+
+    public static function Build($class="", $id="") {
+        return new header($class, $id);
+    }
 }
 ?>

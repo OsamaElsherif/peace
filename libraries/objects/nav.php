@@ -15,5 +15,9 @@ class nav extends element{
         $contains();
         echo "</nav>";
     }
+
+    public static function Build($class="", $id="") {
+        return new nav($class, $id);
+    }
 }
 ?>

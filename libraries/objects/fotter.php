@@ -15,5 +15,9 @@ class fotter extends element {
         $contains();
         echo "</fotter>";
     }
+
+    public static function Build($class="", $id="") {
+        return new fotter($class, $id);
+    }
 }
 ?>

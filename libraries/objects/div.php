@@ -15,5 +15,9 @@ class div extends element{
         $contains();
         echo "</div>";
     }
+
+    public static function Build($class='', $id='') {
+        return new div($class, $id);
+    }
 }
 ?>

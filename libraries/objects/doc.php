@@ -28,5 +28,9 @@ class Doc {
         $this->body($body_class, $contains());
         echo "<html>";
     }
+
+    public static function Build($css='', $script='', $title='') {
+        return new Doc($css, $script, $title);
+    }
 }
 ?>
