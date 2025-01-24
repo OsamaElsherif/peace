@@ -91,6 +91,10 @@ $router->get('/', function () {
 
 $router->dispatch();
 ```
+4. run it
+```bash
+php -S localhost:8000 Peace\router.php
+```
 ### Directory Structure
 
 ```
