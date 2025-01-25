@@ -1,0 +1,32 @@
+[2025-01-25 18-49-42] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-50-44] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-50-46] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-51-07] [error] [Error]: Call to undefined function Peace\libs\car_dump() in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-51-49] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-52-10] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-52-34] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-52-49] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-52-52] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-52-52] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-53-10] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-53-19] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 18-53-36] [error] [TypeError]: call_user_func(): Argument #1 ($callback) must be a valid callback, no array or string given in D:\Users\osaaa\peace\Peace\libs\Router.php at line 83
+
+[2025-01-25 20-28-27] [error] [Error]: Cannot assign an empty string to a string offset in D:\Users\osaaa\peace\Peace\libs\Router.php at line 77
+
+[2025-01-25 20-36-33] [error] [TypeError]: Unsupported operand types: string + string in D:\Users\osaaa\peace\Peace\libs\Router.php at line 80
+
+[2025-01-25 20-36-34] [error] [TypeError]: Unsupported operand types: string + string in D:\Users\osaaa\peace\Peace\libs\Router.php at line 80
+

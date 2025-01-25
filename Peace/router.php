@@ -42,4 +42,8 @@ $router->get('/', function () {
     Home::render();
 });
 
+$router->get('/users/{id}', function($params) {
+    echo "This is a user with id: " . $params['id'];
+}, 'user.show');
+
 $router->dispatch();
